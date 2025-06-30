@@ -1,0 +1,25 @@
+{
+  "name": "ingenium-website",
+  "version": "1.0.0",
+  "description": "A website project for InGenium, a platform for young entrepreneurs featuring business tools and resources.",
+  "main": "src/assets/js/main.js",
+  "scripts": {
+    "setup": "node src/assets/js/setup.js",
+    "start": "npm run setup && live-server public",
+    "build": "npm run setup"
+  },
+  "keywords": [
+    "website",
+    "ingenium",
+    "entrepreneurs",
+    "business",
+    "pricing",
+    "testimonials"
+  ],
+  "author": "InGenium Team",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
