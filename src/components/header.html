@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
     <title>InGenium</title>
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div class="logo fade-in">
             <img src="../assets/images/ingenium.png" alt="InGenium Logo" class="logo-image">
         </div>
-        <nav>
+        <nav class="slide-in-left">
+            <ul>
+                <li><a href="index.html" class="animated-border">Home</a></li>
+                <li><a href="about.html" class="animated-border">About Us</a></li>
+                <li><a href="products.html" class="animated-border">Products & Services</a></li>
+                <li><a href="pricing.html" class="animated-border">Pricing</a></li>
+                <li><a href="contact.html" class="animated-border">Contact</a></li>
+                <li><a href="faq.html" class="animated-border">FAQ</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Mobile menu toggle (visible only on mobile) -->
+        <div class="hamburger-menu mobile-menu-toggle slide-in-right">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <a href="products.html" class="cta-button slide-in-right">Get Started</a>
+        
+        <!-- Mobile navigation menu (hidden by default) -->
+        <div class="mobile-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -20,8 +42,7 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
-        </nav>
-        <button class="cta-button">Get Started</button>
+        </div>
     </header>
 </body>
 </html>

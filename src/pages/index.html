@@ -6,6 +6,7 @@
     <title>InGenium - Empowering Young Entrepreneurs</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
     <link rel="stylesheet" href="../assets/fonts/fonts.css">
 </head>
 <body>
@@ -28,18 +29,18 @@
 
     <main>
         <section class="hero">
-            <p class="subtitle">Business Development Platform</p>
-            <h1>InGenium:<br>Empowering Young Entrepreneurs</h1>
-            <p>Launch and grow your business with idea development support, management tools, and financial guidance.</p>
-            <div class="cta-buttons">
-                <a href="products.html" class="cta-button">Start Your Business</a>
+            <p class="subtitle slide-in-left">Business Development Platform</p>
+            <h1 class="fade-in">InGenium:<br>Empowering Young Entrepreneurs</h1>
+            <p class="slide-in-right">Launch and grow your business with idea development support, management tools, and financial guidance.</p>
+            <div class="cta-buttons scale-in delay-2">
+                <a href="products.html" class="cta-button glow-pulse">Start Your Business</a>
             </div>
 
         </section>
 
         <section class="features-section" id="learn-more">
-            <h2>Powerful Features</h2>
-            <p>InGenium combines cutting-edge tools with expert guidance to help entrepreneurs build successful businesses.</p>
+            <h2 class="scroll-animated scroll-fade-in">Powerful Features</h2>
+            <p class="scroll-animated scroll-fade-in">InGenium combines cutting-edge tools with expert guidance to help entrepreneurs build successful businesses.</p>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -81,12 +82,111 @@
                     <p>Develop a compelling brand identity that resonates with your target audience.</p>
                     <a href="#" class="feature-button">View all options</a>
                 </div>
+                <!-- New Feature Card 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#7B68EE" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"></path>
+                        </svg>
+                    </div>
+                    <h3>Mentorship Network</h3>
+                    <p>Connect with experienced entrepreneurs and industry experts for personalized guidance.</p>
+                    <a href="#" class="feature-button">Join network</a>
+                </div>
+                <!-- New Feature Card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#7B68EE" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Networking Events</h3>
+                    <p>Participate in virtual and local events to build connections and find potential partners.</p>
+                    <a href="#" class="feature-button">View calendar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Impact Graph Section -->
+        <section class="impact-section">
+            <h2 class="scroll-animated scroll-fade-in">Our Impact on Business Growth</h2>
+            <p class="section-description scroll-animated scroll-fade-in">See how InGenium has helped businesses achieve significant financial growth over time.</p>
+            
+            <div class="impact-graph-container">
+                <div class="graph-legend">
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(123, 104, 238, 0.9);"></span>
+                        <span>Coders Over Borders</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(147, 112, 219, 0.9);"></span>
+                        <span>Pre-Kitchen</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(176, 156, 255, 0.9);"></span>
+                        <span>nutriLens</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(193, 148, 255, 0.9);"></span>
+                        <span>Hearts for Healing</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: rgba(206, 176, 255, 0.9);"></span>
+                        <span>The Personal Finance Project</span>
+                    </div>
+                </div>
+                
+                <div class="graph-wrapper">
+                    <div class="graph-y-axis">
+                        <span>150%</span>
+                        <span>120%</span>
+                        <span>90%</span>
+                        <span>60%</span>
+                        <span>30%</span>
+                        <span>0%</span>
+                    </div>
+                    
+                    <div class="graph-container">
+                        <div class="graph-grid"></div>
+                        <div class="graph-bars">
+                            <div class="graph-bar" data-growth="95" data-business="Coders Over Borders" style="height: 0%; background-color: rgba(123, 104, 238, 0.9);"></div>
+                            <div class="graph-bar" data-growth="128" data-business="Pre-Kitchen" style="height: 0%; background-color: rgba(147, 112, 219, 0.9);"></div>
+                            <div class="graph-bar" data-growth="76" data-business="nutriLens" style="height: 0%; background-color: rgba(176, 156, 255, 0.9);"></div>
+                            <div class="graph-bar" data-growth="105" data-business="Hearts for Healing" style="height: 0%; background-color: rgba(193, 148, 255, 0.9);"></div>
+                            <div class="graph-bar" data-growth="140" data-business="The Personal Finance Project" style="height: 0%; background-color: rgba(206, 176, 255, 0.9);"></div>
+                        </div>
+                        <div class="graph-labels">
+                            <span>COB</span>
+                            <span>Pre-Kitchen</span>
+                            <span>nutriLens</span>
+                            <span>Hearts</span>
+                            <span>FinProj</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="graph-info">
+                    <div class="info-card">
+                        <h3>Average Growth</h3>
+                        <p class="stat-number">108<span class="percentage">%</span></p>
+                        <p class="stat-description">Revenue increase over 12 months</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Businesses Served</h3>
+                        <p class="stat-number">350<span class="plus">+</span></p>
+                        <p class="stat-description">Entrepreneurs helped since 2023</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Startup Success Rate</h3>
+                        <p class="stat-number">94<span class="percentage">%</span></p>
+                        <p class="stat-description">Businesses still operating after 1 year</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="how-it-works">
-            <h2>How It Works</h2>
-            <p>A simple four-step process to transform your business idea into reality.</p>
+            <h2 class="scroll-animated scroll-fade-in">How It Works</h2>
             
             <div class="steps-container">
                 <div class="step">
@@ -124,18 +224,17 @@
         </section>
 
         <section class="testimonials">
-            <h2>What Entrepreneurs Are Saying</h2>
-            <p>Real testimonials from entrepreneurs who launched with InGenium.</p>
+            <h2 class="scroll-animated scroll-fade-in">What Entrepreneurs Are Saying</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card" id="testimonial-placeholder"></div>
             </div>
         </section>
 
         <section class="cta-section">
-            <h2>Ready to Launch Your Business?</h2>
-            <p>Join thousands of young entrepreneurs who are turning their ideas into successful businesses with InGenium's guidance.</p>
-            <a href="pricing.html" class="cta-button">View Pricing Plans</a>
-            <p class="ratings">★★★★★ 4.9/5 rating from 1000+ entrepreneurs</p>
+            <h2 class="scroll-animated scroll-fade-in">Ready to Launch Your Business?</h2>
+            <p class="scroll-animated scroll-fade-in">Join thousands of young entrepreneurs who are turning their ideas into successful businesses with InGenium's guidance.</p>
+            <a href="pricing.html" class="cta-button scroll-animated scroll-scale">View Pricing Plans</a>
+            <p class="ratings scroll-animated scroll-fade-in" style="margin-top: 2rem;">★★★★★ 4.9/5 rating from 1000+ entrepreneurs</p>
         </section>
     </main>
 
@@ -145,5 +244,7 @@
     </footer>
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/impact-graph.js"></script>
+    <script src="../assets/js/animations.js"></script>
 </body>
 </html>

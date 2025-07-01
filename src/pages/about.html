@@ -6,12 +6,26 @@
     <title>About Us - InGenium</title>
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
     <link rel="stylesheet" href="../assets/fonts/fonts.css">
 </head>
 <body>
-    <div id="header">
-        <!-- Include header component -->
-    </div>
+    <header>
+        <div class="logo">
+            <img src="../assets/images/ingenium.png" alt="InGenium Logo" class="logo-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products & Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <a href="products.html" class="cta-button">Get Started</a>
+    </header>
 
     <main>
         <section class="hero about-hero">
@@ -20,26 +34,12 @@
         </section>
 
         <section class="about-mission">
-            <div class="mission-container">
-                <div class="mission-content">
-                    <h2>Our Mission</h2>
+            <div class="container">
+                <h2>Our Mission</h2>
+                <div class="story-content">
                     <p>At InGenium, our mission is to accelerate small business success by delivering affordable, actionable solutions in finance, operations, and branding. We believe in empowering the next generation of business leaders with the tools they need to thrive.</p>
                     
                     <p>We're committed to making entrepreneurship accessible to everyone, regardless of background or experience level. By providing affordable tools and resources, we aim to lower the barriers to entry for starting and growing a successful business.</p>
-                </div>
-                <div class="mission-graphic">
-                    <div class="graphic-element">
-                        <svg width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="125" cy="125" r="125" fill="url(#paint0_radial)" fill-opacity="0.15"/>
-                            <path d="M125 85C137.15 85 147 75.15 147 63C147 50.85 137.15 41 125 41C112.85 41 103 50.85 103 63C103 75.15 112.85 85 125 85ZM125 97C103.5 97 63 108.75 63 130V141H187V130C187 108.75 146.5 97 125 97ZM125 188C158.14 188 185 161.14 185 128C185 94.86 158.14 68 125 68C91.86 68 65 94.86 65 128C65 161.14 91.86 188 125 188Z" fill="rgba(123, 104, 238, 0.2)"/>
-                            <defs>
-                                <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(125 125) rotate(90) scale(125)">
-                                    <stop stop-color="#7B68EE" stop-opacity="0.2"/>
-                                    <stop offset="1" stop-color="#7B68EE" stop-opacity="0"/>
-                                </radialGradient>
-                            </defs>
-                        </svg>
-                    </div>
                 </div>
             </div>
         </section>
@@ -84,8 +84,7 @@
                             <p class="member-bio">Oversees operations and client relationships, ensuring our platform delivers exceptional value to entrepreneurs.</p>
                         </div>
                     </div>
-                    
-                    <div class="team-member">
+                                        <div class="team-member">
                         <div class="member-image">
                             <div class="member-avatar">TN</div>
                         </div>
@@ -95,6 +94,18 @@
                             <p class="member-bio">Directs our technology strategy and platform development, creating innovative solutions that power entrepreneurial success.</p>
                         </div>
                     </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <div class="member-avatar">SL</div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Selina Lu</h3>
+                            <p class="member-title">Vice President</p>
+                            <p class="member-bio">Manages key partnerships and growth strategies, driving InGenium's mission to support aspiring entrepreneurs worldwide.</p>
+                        </div>
+                    </div>
+                    
+
                 </div>
             </div>
         </section>
@@ -141,10 +152,11 @@
         </section>
     </main>
 
-    <div id="footer">
-        <!-- Include footer component -->
-    </div>
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/animations.js"></script>
 </body>
 </html>
