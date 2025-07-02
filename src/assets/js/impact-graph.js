@@ -4,6 +4,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Get all graph bars
     const graphBars = document.querySelectorAll('.graph-bar');
+    if (graphBars.length === 0) return;
     
     // Function to check if element is in viewport
     function isInViewport(element) {
@@ -75,10 +76,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add scroll event listener
     window.addEventListener('scroll', animateGraphBars);
     
-    // Check if already in viewport on page load
+    // Run immediately to check if in viewport on page load
     animateGraphBars();
-
-    // Add additional CSS for tooltip
+    
+    // Add tooltip styles
     const style = document.createElement('style');
     style.textContent = `
         .graph-tooltip {
